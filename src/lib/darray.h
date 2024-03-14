@@ -1,14 +1,14 @@
 #ifndef DARRAY_H
 #define DARRAY_H
 
-#include <stdlib.h> // For size_t definition
+#include <stdlib.h>  // For size_t definition
 
 // Declaration of the DynamicArray struct
 typedef struct {
-  void *items;      // Pointer to the array of items
-  int size;         // Number of elements currently in the array
-  size_t item_size; // Size of each item in the array
-  int capacity;     // Current capacity of the array
+  void *items;       // Pointer to the array of items
+  int size;          // Number of elements currently in the array
+  size_t item_size;  // Size of each item in the array
+  int capacity;      // Current capacity of the array
 } DynamicArray;
 
 // Function prototypes
@@ -40,4 +40,4 @@ int darray_index_of(DynamicArray *darray, void *item);
 // Check if an item is contained in the dynamic array
 int darray_contains(DynamicArray *darray, void *item);
 
-#endif // DARRAY_H
+#endif  // DARRAY_H
